@@ -3,6 +3,7 @@
   --mainWhite: #ffffff;
   --mainBlue: #8ec1c5;
   --mainPink: #FFA5A5;
+  --mainGrey: #eaeef4;
   --mainDarkBrown: #34231D;
   --mainLightBrown: #AF7C6E;
   --mainSpacing: 0.1rem;
@@ -385,10 +386,7 @@ a:hover, #hamitems li a:hover {
   justify-content: space-between;
   padding: 1rem;
   color: black;
-  background: rgba(201, 226, 227, 0.8);
   background: var(--mainGrey);
-  /* color: var(--mainDarkBrown); */
-  /* color: whitesmoke; */
   border-radius: 0 0 20px 20px;
 }
 
@@ -437,12 +435,10 @@ a:hover, #hamitems li a:hover {
 /* --------------- End of Cards ---------------- */
 /* --------------- Top button when scroll ---------------- */
 #access-button {
-  /* display: none; */
   position: fixed;
   bottom: 120px;
   right: 30px;
   z-index: 99;
-  /* font-size: 2.5rem; */
   height: 60px;
   width: 60px;
   text-align: center;
@@ -488,8 +484,6 @@ footer{
 
 .footer-link:hover {
   text-decoration: underline;
-  /* color: black; */
-
 }
 
 .social-icons {
