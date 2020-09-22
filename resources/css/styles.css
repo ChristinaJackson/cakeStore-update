@@ -401,13 +401,11 @@ a:hover, #hamitems li a:hover {
   position: absolute;
   top: 70%;
   right: 0;
-  background: var(--mainGreen);
+  background: var(--mainDarkBrown);
   color: var(--mainWhite);
   border: none;
-  text-transform: uppercase;
   padding: 0.5rem 0.75rem;
   letter-spacing: var(--mainSpacing);
-  font-weight: bold;
   transition: var(--mainTransition);
   transform: translateX(101%);
   cursor: pointer;
@@ -415,7 +413,7 @@ a:hover, #hamitems li a:hover {
 }
 
 .bag-btn:hover {
-  color: black;
+  text-decoration: underline;
 }
 
 .fa-shopping-cart {

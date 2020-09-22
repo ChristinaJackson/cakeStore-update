@@ -41,6 +41,7 @@ class Products {
 class UI {
   displayProducts(products) {
     let result = '';
+
     products.forEach((product) => {
       result += `
       <div class="card">
@@ -52,7 +53,7 @@ class UI {
           />
            <button class="bag-btn" data-id=${product.id}>
             <i class="fas fa-shopping-cart"></i>
-            add to cart
+            Add to Cart
           </button>
         </div>
         <div class="itemName">
@@ -89,6 +90,7 @@ class UI {
         event.target.disabled = true;
         // get product from products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
+        console.log(cartItem.amount)
         // add product to the cart
         cart = [...cart, cartItem];
         // save cart in local storage
@@ -97,6 +99,7 @@ class UI {
         this.setCartValues(cart);
         // display cart item
         this.addCartItem(cartItem);
+
       });
     });
   }
@@ -201,7 +204,7 @@ class UI {
     Storage.saveCart(cart);
     let button = this.getSingleButton(id);
     button.disabled = false;
-    button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
+    button.innerHTML = `<i class="fas fa-shopping-cart"></i>Add to Cart`;
   }
   getSingleButton(id) {
     return buttonsDOM.find(button => button.dataset.id === id);
