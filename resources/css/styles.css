@@ -336,6 +336,7 @@ a:hover, #hamitems li a:hover {
   text-align: center;
   font-size: var(--mediumHeadingFontSize);
   margin: 2rem 0;
+  color: var(--mainDarkBrown);
 }
 #sort-buttons{
   font-family: var(--bodyFont);
