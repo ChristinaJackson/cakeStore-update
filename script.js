@@ -38,9 +38,9 @@ class Products {
   }
 }
 // display products
-class UI{
+class UI {
   displayProducts(products) {
-    let result ='';
+    let result = '';
     products.forEach((product) => {
       result += `
       <div class="card">
@@ -64,16 +64,16 @@ class UI{
     });
     productsDOM.innerHTML = result;
   }
-//values from the sortProductByType function/event listener
-  filterItems(sortType,products){
-    if (sortType === "view all"){
+  //values from the sortProductByType function/event listener
+  filterItems(sortType, products) {
+    if (sortType === "view all") {
       this.displayProducts(products)
-    }else {
+    } else {
       let filteredProducts = products.filter(products => (products.type === sortType))
       this.displayProducts(filteredProducts)
     }
   }
- 
+
   getBagButtons() {
     const buttons = [...document.querySelectorAll(".bag-btn")];
     buttonsDOM = buttons;
@@ -166,7 +166,7 @@ class UI{
         Storage.saveCart(cart);
         this.setCartValues(cart);
         addAmount.nextElementSibling.innerText = tempItem.amount;
-      }else if (event.target.classList.contains("fa-chevron-down")) {
+      } else if (event.target.classList.contains("fa-chevron-down")) {
         let lowerAmount = event.target;
         let id = lowerAmount.dataset.id;
         let tempItem = cart.find(item => item.id === id);
@@ -181,8 +181,8 @@ class UI{
         }
       }
     });
-    cartOverlay.addEventListener('click', (e)=>{
-      if(e.target.classList.contains("transparentBcg")){
+    cartOverlay.addEventListener('click', (e) => {
+      if (e.target.classList.contains("transparentBcg")) {
         this.hideCart();
       }
     });
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.displayProducts(products);
       Storage.saveProducts(products);
       //linking to the sorting function here, passing through the products and ui to link
-      sortProductByType(ui,products);
+      sortProductByType(ui, products);
     })
     .then(() => {
       ui.getBagButtons();
@@ -251,7 +251,7 @@ function sortProductByType(ui, products) {
     //only listening for clicks on buttons in sort-section
     if (e.target.tagName === "BUTTON") {
       const sortType = e.target.innerText.toLowerCase();
-      ui.filterItems(sortType,products)
+      ui.filterItems(sortType, products)
     }
   });
 }
@@ -259,7 +259,7 @@ function sortProductByType(ui, products) {
 //----------------accessibility mode code-------------------//
 let toggle = document.getElementById("access-button");
 
-toggle.addEventListener('click', ()=>{
+toggle.addEventListener('click', () => {
   //elements to be toggled on applying the accessibility mode
   const navbar = document.getElementsByClassName('navbar');
   const bannerButton = document.getElementsByClassName('banner-btn');
@@ -268,14 +268,13 @@ toggle.addEventListener('click', ()=>{
   const cartButton = document.getElementsByClassName("cart-footer");
   const cartItems = document.getElementsByClassName('cart-item');
   const bagButtons = document.getElementsByClassName('bag-btn');
-  const upButton = document.getElementById('myBtn');
   const socialIcons = document.getElementsByClassName('social-icons')
-    for(let i=0; i < cartItems.length; i++){
-      cartItems[i].classList.toggle('access-mode')
-    }
-    for(let i=0; i < bagButtons.length; i++){
-      bagButtons[i].classList.toggle('access-mode')
-    }
+  for (let i = 0; i < cartItems.length; i++) {
+    cartItems[i].classList.toggle('access-mode')
+  }
+  for (let i = 0; i < bagButtons.length; i++) {
+    bagButtons[i].classList.toggle('access-mode')
+  }
   navbar[0].classList.toggle('access-mode');
   bannerButton[0].classList.toggle('access-mode');
   cartButton[0].classList.toggle('access-mode');
@@ -286,20 +285,6 @@ toggle.addEventListener('click', ()=>{
   socialIcons[0].classList.toggle('access-mode')
 });
 
-//----------------top button when scroll-------------------//
-// get the button
-let myButton = document.getElementById("myBtn");
-// when the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20) {
-        myButton.style.display = "block";
-      } else {
-        myButton.style.display = "none";
-      }
-}
-//----------------end of top button when scroll-------------------//
 
 
