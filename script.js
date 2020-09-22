@@ -261,7 +261,7 @@ let toggle = document.getElementById("access-button");
 
 toggle.addEventListener('click', () => {
   //elements to be toggled on applying the accessibility mode
-  const navbar = document.getElementsByClassName('navbar');
+  const hamitems = document.getElementById('hamitems');
   const bannerButton = document.getElementsByClassName('banner-btn');
   const sortSection = document.getElementById('sort-section');
   const footer = document.getElementsByTagName("FOOTER");
@@ -275,12 +275,10 @@ toggle.addEventListener('click', () => {
   for (let i = 0; i < bagButtons.length; i++) {
     bagButtons[i].classList.toggle('access-mode')
   }
-  navbar[0].classList.toggle('access-mode');
+  hamitems.classList.toggle('access-mode');
   bannerButton[0].classList.toggle('access-mode');
   cartButton[0].classList.toggle('access-mode');
   sortSection.classList.toggle('access-mode');
-  console.log(upButton)
-  upButton.classList.toggle('access-mode');
   footer[0].classList.toggle('access-mode');
   socialIcons[0].classList.toggle('access-mode')
 });
