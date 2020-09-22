@@ -1,17 +1,11 @@
 /* --------------- Variables ---------------- */
 :root {
-  --primaryColor: #e3e5b3;
-  --mainGrey: #eaeef4;
   --mainWhite: #ffffff;
   --mainBlue: #8ec1c5;
-  --mainGreen: #93c572;
-  --mainRed: #FFA5A5;
-  --accessibleGreen: #48772C;
+  --mainPink: #FFA5A5;
   --mainDarkBrown: #34231D;
   --mainLightBrown: #AF7C6E;
-  --mainLightGreen: #A9F0D1;
   --mainSpacing: 0.1rem;
-  /* --mainTransition: all 0.1s linear; */
 
   /* fonts */
   --headingFont:'Bitter', serif;
@@ -37,9 +31,6 @@
 }
 
 /* --------------- Main styles ---------------- */
-body {
-  /* font-family: "Cormorant SC", "Lucida Sans", "Verdana", serif; */
-}
 ul, ol {
   list-style: none;
 }
@@ -73,7 +64,6 @@ nav.navbar {
   align-self: center;
 }
 
-
 #logo {
  width: 100px;
 }
@@ -88,12 +78,10 @@ a:hover, #hamitems li a:hover {
   text-decoration: underline;
 }
 
-
 .cart-btn {
   position: relative;
   cursor: pointer;
   margin-left: auto;
-
 }
 
 .cart-items {
@@ -102,7 +90,7 @@ a:hover, #hamitems li a:hover {
   left: 28px;
   height: 25px;
   width: 25px;
-  background:var(--mainRed);
+  background:var(--mainPink);
   padding:5px;
   border-radius: 50%;
   color: var(--mainWhite);
@@ -136,6 +124,7 @@ a:hover, #hamitems li a:hover {
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
+    color: var(--mainDarkBrown);
   }
 
   /* Break down menu items into vertical */
@@ -314,8 +303,8 @@ a:hover, #hamitems li a:hover {
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
   font-weight: 700;
-  background: var(--mainRed);
-  border: 1px solid var(--mainRed);
+  background: var(--mainPink);
+  border: 1px solid var(--mainPink);
   transition: var(--mainTransition);
   cursor: pointer;
   border-radius: 10px;
@@ -351,8 +340,8 @@ a:hover, #hamitems li a:hover {
 #sort-buttons button {
   padding: 0.7rem 1.5rem;
   border-radius: 10px;
-  background-color: var(--mainRed);
-  border: solid 1px var(--mainRed);
+  background-color: var(--mainPink);
+  border: solid 1px var(--mainPink);
   color: black;
 }
 #sort-buttons button:not(:last-child){
