@@ -537,6 +537,7 @@ footer{
   position: fixed;
   bottom: 10px;
   left: 10px;
+  }
 }
 @media only screen and (max-width: 900px) {
   #sort-buttons{
@@ -589,5 +590,5 @@ a.access-mode i{
   all: unset;
   transform: scale(1.1);
 }
-/* --------------- End of access-mode ----------------- */
 
+/* --------------- End of access-mode ----------------- */

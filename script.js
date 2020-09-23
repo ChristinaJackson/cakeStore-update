@@ -271,7 +271,8 @@ toggle.addEventListener('click', () => {
   const cartButton = document.getElementsByClassName("cart-footer");
   const cartItems = document.getElementsByClassName('cart-item');
   const bagButtons = document.getElementsByClassName('bag-btn');
-  const socialIcons = document.getElementsByClassName('social-icons')
+  const socialIcons = document.getElementsByClassName('social-icons');
+
   for (let i = 0; i < cartItems.length; i++) {
     cartItems[i].classList.toggle('access-mode')
   }
