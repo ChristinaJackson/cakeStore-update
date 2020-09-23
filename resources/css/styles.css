@@ -285,6 +285,7 @@ a:hover, #hamitems li a:hover {
   padding: 2rem;
   border-radius: 10px;
   width: 80vw;
+  max-width: 1000px;
   color: var(--mainDarkBrown);
   font-family: var(--headingFont);
   -webkit-box-shadow: 0px 0px 17px -3px rgba(38,38,38,1);
@@ -332,6 +333,7 @@ a:hover, #hamitems li a:hover {
   font-family: var(--bodyFont);
   font-weight: bold;
   width: 80vw;
+  max-width: 1000px;
   margin:auto;
   display: flex;
   flex-direction: row;
@@ -361,7 +363,8 @@ a:hover, #hamitems li a:hover {
 .cards {
   font-family: var(--bodyFont);
   margin: 4rem auto;
-  max-width: 80vw;
+  width: 80vw;
+  max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;
@@ -436,21 +439,22 @@ a:hover, #hamitems li a:hover {
 /* --------------- Top button when scroll ---------------- */
 #access-button {
   position: fixed;
-  bottom: 120px;
-  right: 30px;
+  bottom: 90px;
+  left: 30px;
   z-index: 99;
   height: 60px;
   width: 60px;
   text-align: center;
   color: whitesmoke;
-  background-color: royalblue;
+  background-color: darkblue;
   border-radius: 50%;
   padding: 12px;
 }
 
 
 #access-button:hover {
-  transform: 1.1;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 /* --------------- End of top button when scroll ---------------- */
 /* --------------- Start of Footer ---------------- */
@@ -524,7 +528,11 @@ footer{
   .cards {
     margin: 2rem;
   }
- 
+  .banner-title {
+    font-size: var(--smallHeadingFontSize);
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   #sort-buttons{
@@ -541,7 +549,7 @@ footer{
 
 /* --------------- End of media queries ----------------- */
 
-/* --------------- Start of access-mode ----------------- */
+/* --------------- Start of color access-mode ----------------- */
 
 #hamitems.access-mode a{
   color: var(--mainDarkBrown);
@@ -559,24 +567,23 @@ footer{
 }
 footer.access-mode, footer.access-mode  a{
   color: var(--mainDarkBrown);
-  font-size: var(--mediumBodyFont)
 }
 .cart-item.access-mode i{
  color: var(--accessibleGreen)
 }
 .bag-btn.access-mode  {
-  background-color: var(--accessibleGreen);
-  color: var(--mainWhite)
+  background-color: var(--mainDarkBrown);
+  color: var(--mainWhite);
 }
 a.access-mode i{
-  color: var(--accessibleGreen)
+  color: var(--accessibleGreen);
 }
 .social-icons.access-mode a i{
   color: var(--mainDarkBrown);
 
 }.social-icons.access-mode a:hover{
   all: unset;
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 /* --------------- End of access-mode ----------------- */
 
