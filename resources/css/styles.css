@@ -439,7 +439,7 @@ a:hover, #hamitems li a:hover {
 /* --------------- Top button when scroll ---------------- */
 #access-button {
   position: fixed;
-  bottom: 90px;
+  bottom: 30px;
   left: 30px;
   z-index: 99;
   height: 60px;
@@ -533,6 +533,10 @@ footer{
     letter-spacing: var(--mainSpacing);
     margin-bottom: 2rem;
   }
+  #access-button {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 }
 @media only screen and (max-width: 900px) {
   #sort-buttons{
