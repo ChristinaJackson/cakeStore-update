@@ -1,8 +1,8 @@
 
 # Cake Store - Update
-**This project is live here: [Project](https://github.com/ChristinaJackson/cakeStore-update)**
+**This project is live here: [Project](https://christinajackson.github.io/cakeStore-update/)**
 
-![Image of project start page](./resources/images/cakestore-update.png)
+![Image of project start page](./resources/images/grandmasredesign.png)
 
 ## Description
 I coordinated the original version of this project because I wanted to gain experience developing collaboratively. I reached out to someone who I thought would be willing to participate. The current image is of the project after I did some redesign work.
