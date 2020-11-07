@@ -1,6 +1,6 @@
 
 # Cake Store - Update
-**This project is live here: [Live Project](https://github.com/ChristinaJackson/cakeStore-update)**
+**This project is live here: [Project](https://github.com/ChristinaJackson/cakeStore-update)**
 
 ![Image of project start page](./resources/images/cakestore-update.png)
 
