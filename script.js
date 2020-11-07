@@ -1,7 +1,3 @@
-// When I wrote this, only God and I understood what I was doing.
-// Well, now God only knows.
-
-// variables
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
