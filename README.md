@@ -15,7 +15,7 @@ Build a mock store front page.
 On the original version I built the image grid, developed the high contrast mode for color accessibility, applied flex-box layout features to the header and footer as well as designing the footer. I added the filter on the products page as well as the feature to click out of cart area to close cart. Improved the positioning and design of color accessibility button. 
 
 #### Partners Contributions
-Implemented and adapted code for the cart from a tutorial found here: [Tutorial]("https://www.youtube.com/watch?v=023Psne_-_4) and normalized CSS 
+Implemented and adapted code for the cart from a tutorial found here: [Tutorial]("https://www.youtube.com/watch?v=023Psne_-_4)
 
 ## Features to be Added
 
