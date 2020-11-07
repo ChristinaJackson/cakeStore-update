@@ -69,9 +69,12 @@ class UI {
   filterItems(sortType, products) {
     if (sortType === "view all") {
       this.displayProducts(products)
+      this.getBagButtons()
     } else {
       let filteredProducts = products.filter(products => (products.type === sortType))
       this.displayProducts(filteredProducts)
+      this.getBagButtons()
+
     }
   }
 
